@@ -1,5 +1,7 @@
 {
   "name": "hbc",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
