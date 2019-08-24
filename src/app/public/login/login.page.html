@@ -1,9 +1,17 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-row style="display: flex; justify-content: center; align-items: center;  height: 100%;">
+    <ion-card>
+        <ion-card-content>
 
+            <div class="ion-padding">
+              <ion-button (click)="login()" expand="block" type="submit" class="ion-no-margin">Login with Email Id</ion-button>
+            </div>
+            <div class="ion-padding">
+              <ion-button (click)="login()" expand="block" color="success" type="submit" class="ion-no-margin">Login with Phone Number</ion-button>
+            </div>
+
+      </ion-card-content>
+    </ion-card>
+</ion-row>
 </ion-content>
+
