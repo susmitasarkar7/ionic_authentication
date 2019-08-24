@@ -9,5 +9,15 @@
 </ion-header>
 
 <ion-content>
-
+  <div *ngIf="loading">
+      Loading...
+    </div>
+    <div *ngIf="error">
+      Error :(
+    </div>
+    <div *ngIf="categories">
+      <div *ngFor="let category of categories">
+        <p>{{category.name}}</p>
+      </div>
+    </div>
 </ion-content>

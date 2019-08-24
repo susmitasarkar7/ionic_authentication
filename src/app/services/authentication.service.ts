@@ -18,9 +18,11 @@ export class AuthenticationService {
     });
   }
 
-  login() {
-    return this.storage.set(TOKEN_KEY, 'Bearer 123456')
+  login(token) {
+    return this.storage.set(TOKEN_KEY, `Bearer ${token}`)
     .then(res => {
+      // console.log(res);
+      
       this.authenticationState.next(true);
     });
   }
